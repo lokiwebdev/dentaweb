@@ -1199,7 +1199,7 @@ header .form-inline {
             font-size: 12px;
             padding: 0 5px;
         }
-        &[class*="bg"] {
+        &[className*="bg"] {
             .card-title {
                 color: #fff;
             }
@@ -1547,7 +1547,7 @@ header .form-inline {
     .card-header {
         .card-actions {
             float: right;
-            [class*="btn"] {
+            [className*="btn"] {
                 border-left: 1px solid rgba(120, 130, 140, 0.4);
                 color: #878787;
                 display: inline-block;
@@ -1681,15 +1681,15 @@ header .form-inline {
     position: relative;
     text-align: left;
 }
-.icon-container [class^="ti-"],
-.icon-container [class*=" ti-"] {
+.icon-container [className^="ti-"],
+.icon-container [className*=" ti-"] {
     color: #000;
     position: absolute;
     margin-top: 3px;
     transition: .3s;
 }
-.icon-container:hover [class^="ti-"],
-.icon-container:hover [class*=" ti-"] {
+.icon-container:hover [className^="ti-"],
+.icon-container:hover [className*=" ti-"] {
     font-size: 2.2em;
     margin-top: -5px;
 }
@@ -2522,7 +2522,7 @@ footer.site-footer {
     }  
     .content {
         padding: 1.25em;
-        // div[class*="col"] {
+        // div[className*="col"] {
         //     padding-left: 7.5px;
         //     padding-right: 7.5px;
         // }
@@ -2564,7 +2564,7 @@ footer.site-footer {
         margin-bottom: 0 !important;
         padding-top: 0 !important;
     }
-    .card-footer.bg-white [class*="float"] {
+    .card-footer.bg-white [className*="float"] {
         display: block;
         float: none !important;
         text-align: center;
@@ -2622,7 +2622,7 @@ footer.site-footer {
 }
 
 @media (max-width: 992px) {
-    [class*="col"].no-padding {
+    [className*="col"].no-padding {
         flex: none;
     }
 }

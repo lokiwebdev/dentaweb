@@ -1,7 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
+// import src1 from './main'
 
 const Navbar = () => {
+
+    // useEffect(() => {
+    //     // Move entire script code here
+    //     const script = document.createElement("script");
+    //     script.src = { src1 };
+    //     script.async = true;
+    //     document.body.appendChild(script);
+    // }, []);
+
+    // useEffect(() => {
+
+    // }, []);
+
+    const [open, setOpen] = useState(false);
+
+    const handleMenuToggle = () => {
+        const windowWidth = window.innerWidth;
+        if (windowWidth < 1010) {
+            document.body.classList.remove('open');
+            if (windowWidth < 760) {
+                document.getElementById('left-panel').style.display = open ? 'block' : 'none';
+            } else {
+                document.getElementById('left-panel').classList.toggle('open-menu');
+            }
+        } else {
+            document.body.classList.toggle('open');
+            document.getElementById('left-panel').classList.remove('open-menu');
+        }
+        setOpen(!open);
+    }
     return (
         <>
             {/* <!-- Left Panel --> */}
@@ -41,7 +72,8 @@ const Navbar = () => {
                         <div className="navbar-header">
                             <div className="navbar-brand" href="./"><span className="red">Denta</span>web</div>
                             <div className="navbar-brand hidden" href="./">Dentaweb</div>
-                            <a id="menuToggle" className="menutoggle"><i className="fa fa-bars"></i></a>
+                            {/* <button id="menuToggle" onClick={handleMenuToggle}><i className="fa fa-bars"></i></button> */}
+                            <a id="menuToggle" onClick={handleMenuToggle} className="menutoggle"><i className="fa fa-bars"></i></a>
                         </div>
                     </div>
                     <div className="top-right">
@@ -144,6 +176,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </header>
+                <div className="clearfix"></div>
             </div>
         </>
     )

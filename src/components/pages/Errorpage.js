@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom'
 
 
 const Errorpage = () => {
-    const style ={
+    const style = {
         minHeight: '25rem',
         border: '8px solid blue',
-        width: '90%',
+        width: '50%',
         // margin: '4px',
         padding: '40px',
-        
+
         // justifyContent: 'center',
         // alignItems: 'center',
         textAlign: 'center',
@@ -37,7 +37,7 @@ const Errorpage = () => {
         <>
 
 
-            <div style={style}>
+            <div id="right-panel" className="right-panel" style={style}>
 
                 <div className="notfound" id="notfount">
                     <div className="notfound-404">

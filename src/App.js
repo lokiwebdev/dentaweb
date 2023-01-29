@@ -21,6 +21,7 @@ const App = () => {
           <Routes>
             <Route path="/form" exact element={<FormPage />} />
             <Route path="/dashboard" exact element={<Dashboard />} />
+            <Route path="/" exact element={<Dashboard />} />
             <Route path="/grid" exact element={<GridPage />} />
 
 

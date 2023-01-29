@@ -6,7 +6,7 @@ const GridPage = () => {
 
             <div id="right-panel" className="right-panel">
 
-                <div class="content">
+                <div className="content">
                     {/* <!-- Animated --> */}
                     <p>Please add here MUI X is a collection of advanced UI components data grid.</p>
                     {/* <!-- .animated --> */}
